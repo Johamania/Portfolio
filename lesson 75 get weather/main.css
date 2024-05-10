@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(img/changing-weather.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    padding: 12px 8px;
+    border: none;
+    border-radius: 14px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 10px 10px gray;
+}

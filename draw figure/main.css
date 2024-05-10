@@ -1,0 +1,11 @@
+.form-creation {
+    margin: auto;
+}
+
+.inputs {
+    margin-top: 10px;
+}
+
+#res {
+    transition: 5s;
+}

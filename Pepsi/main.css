@@ -1,0 +1,49 @@
+body {
+    background-color: #015794;
+}
+
+.logo img {
+    width: 120px;
+    height: 100px;
+}
+
+.lorem {
+    width: 700px;
+}
+
+.main-btn {
+    background-color: white;
+    color: #015794;
+    font-weight: 900;
+    border: none;
+    height: 30px
+}
+
+.main-btn:hover {
+    box-shadow: 0 0 15px white;
+}
+
+.main-logo {
+    margin-left: 300px;
+}
+
+.main-logo img {
+    height: 100%;
+    width: 80%;
+}
+
+.like {
+    font-size: 100px;
+}
+
+.types img {
+    width: 50px;
+    height: 100%;
+}
+
+.types{
+    transition: transform .5s;
+}
+.types:hover {
+  transform: translateY(-20px);  
+}
