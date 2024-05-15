@@ -1,0 +1,16 @@
+import {ADD_NEW_TASK, EDIT_TASK} from "./taskTypes";
+
+export const addNewTask = (data) => {
+    return {
+        type: ADD_NEW_TASK,
+        payload: data
+    }
+}
+export const editTask = (data) => {
+    return {
+        type: EDIT_TASK,
+        payload: data
+    }
+}
+
+export const selectTask = (state) => state.taskReducer.tasks
