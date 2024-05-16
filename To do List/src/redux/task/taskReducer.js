@@ -1,4 +1,4 @@
-import {ADD_NEW_TASK, EDIT_TASK} from "./taskTypes";
+import {ADD_NEW_TASK, DELETE_TASK, EDIT_TASK} from "./taskTypes";
 
 const initialState = {
     tasks: [
@@ -22,6 +22,9 @@ const taskReducer = (state = initialState, action) => {
                 return item
             })
             return {...state, tasks: data}
+        case DELETE_TASK :
+            const filteredTasks = state.tasks.filter(item => item.id !== action.payload);
+            return { ...state, tasks: filteredTasks };
         default:
             return state
     }
